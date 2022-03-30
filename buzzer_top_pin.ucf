@@ -1,0 +1,26 @@
+# lcd_control_top_pin
+#port (
+#		clk : in std_logic;
+#		bt, sw : in std_logic;
+#		rs, rw, e : out std_logic;
+#		data : out std_logic_vector (7 downto 0);
+#		bz_out : out std_logic -- beep
+#		);
+
+net "clk" loc = p55;
+net "bt" loc = p67; # bt 8
+net "sw" loc = p74; # sw 4
+
+net "rs" loc = p131;
+net "rw" loc = p134;
+net "e" loc = p133;
+net "data[7]" loc = p143;
+net "data[6]" loc = p1;
+net "data[5]" loc = p141;
+net "data[4]" loc = p142;
+net "data[3]" loc = p139;
+net "data[2]" loc = p140;
+net "data[1]" loc = p137;
+net "data[0]" loc = p138;
+
+net "bz_out" loc = p14;
