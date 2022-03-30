@@ -49,5 +49,3 @@ Dut_2 : component buzzer
 	port map (clk, reg, bz_out);
 
 end structure;
-
-
