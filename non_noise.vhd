@@ -19,6 +19,7 @@ variable count : integer range 0 to 15000000; -- 0.3S
 begin
 if en = '0' then
 	clk_temp <= '0';
+	en <= '1';
 elsif en = '1' then
 	if rising_edge (btn) then
 		clk_temp <= '1';
